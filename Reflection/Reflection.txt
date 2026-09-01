@@ -1,0 +1,73 @@
+====================================================================
+                     C# REFLECTION OVERVIEW
+====================================================================
+
+1. WHAT IS REFLECTION?
+--------------------------------------------------------------------
+In C#, Reflection allows a program to inspect, examine, and interact 
+with its own metadata (and loaded assemblies) at runtime.
+
+It enables an application to query itself dynamically:
+  - What classes, structs, or interfaces exist in an assembly?
+  - What methods, properties, and constructors are defined on a type?
+  - Can I read or write private fields and properties dynamically?
+  - Can I instantiate types and invoke members whose names are known 
+    only at runtime?
+
+The core types reside primarily in the 'System.Reflection' namespace.
+
+
+2. COMMON USE CASES
+--------------------------------------------------------------------
+  - Dependency Injection (DI) Containers (e.g., Microsoft.Extensions.DependencyInjection)
+  - Object-Relational Mappers (ORMs) (e.g., Entity Framework Core, Dapper)
+  - Serialization / Deserialization engines (System.Text.Json, Newtonsoft.Json)
+  - Extensibility & Plugin Architectures (AssemblyLoadContext, interface discovery)
+  - Unit Testing & Mocking Frameworks (xUnit, NUnit, Moq)
+  - Custom Attribute Processing (validation, routing, authorization)
+  - Dynamic Object Creation & Late Binding
+
+
+3. KEY CLASSES IN SYSTEM.REFLECTION
+--------------------------------------------------------------------
+Class                 Purpose
+--------------------------------------------------------------------
+Assembly              Represents a compiled .NET module/assembly (.dll/.exe)
+Type                  Represents type declarations (classes, structs, interfaces, enums)
+MethodInfo            Metadata and execution handle for methods
+PropertyInfo          Metadata, getters, and setters for properties
+FieldInfo             Metadata and direct access to fields
+ConstructorInfo       Metadata and instantiation handles for constructors
+ParameterInfo         Metadata about method/constructor arguments
+EventInfo             Metadata for events and event-handler hooks
+MemberInfo            Abstract base class for all member metadata types
+Attribute             Base class for defining and retrieving custom metadata
+
+
+4. CRITICAL CONCEPTS
+--------------------------------------------------------------------
+- BindingFlags:
+  Bitmask enumeration that controls search filters when looking up members.
+  Common combinations:
+    * BindingFlags.Public | BindingFlags.Instance
+    * BindingFlags.NonPublic | BindingFlags.Instance (access private/protected members)
+    * BindingFlags.Static | BindingFlags.Public
+
+- Method Invocation:
+  * Slow: MethodInfo.Invoke(instance, parameters) -> boxes value types.
+  * Fast: Delegate.CreateDelegate() or Expression Trees compiled at startup.
+
+
+5. PERFORMANCE & MODERN .NET CONSIDERATIONS
+--------------------------------------------------------------------
+- Execution Overhead:
+  Reflection bypasses JIT inline optimizations and involves lookup costs 
+  plus object boxing/unboxing overhead. Cache MemberInfo / MethodInfo instances 
+  or compile them into dynamic delegates for hot execution paths.
+
+- Native AOT & Trimming Compatibility:
+  In modern .NET (Native AOT / trimmed apps), reflection over unreferenced 
+  code can lead to runtime missing-member exceptions. Modern frameworks 
+  frequently favor C# Source Generators (Roslyn compile-time reflection) 
+  over runtime reflection where feasible.
+====================================================================

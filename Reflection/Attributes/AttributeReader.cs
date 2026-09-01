@@ -1,3 +1,7 @@
+using System.Reflection;
+
+namespace Reflection.Attributes;
+
 public static class AttributeReader
 {
     public static void Run()

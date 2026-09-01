@@ -1,3 +1,5 @@
+using System.Reflection;
+namespace Reflection.AssemblyScanning;
 public static class AssemblyScanner
 {
     public static void Run()

@@ -1,3 +1,6 @@
+
+namespace Reflection.AssemblyScanning;
+
 public class MetricsPlugin : IPlugin
 {
     public string Name => "Metrics";

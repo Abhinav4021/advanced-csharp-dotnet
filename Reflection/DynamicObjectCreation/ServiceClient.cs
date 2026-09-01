@@ -1,3 +1,6 @@
+
+namespace Reflection.DynamicObjectCreation;
+
 public class ServiceClient
 {
     public string Endpoint { get; }

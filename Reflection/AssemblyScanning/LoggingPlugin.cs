@@ -1,3 +1,6 @@
+
+namespace Reflection.AssemblyScanning;
+
 public class LoggingPlugin : IPlugin
 {
     public string Name => "Logger";

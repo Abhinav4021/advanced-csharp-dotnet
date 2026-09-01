@@ -1,8 +1,8 @@
-using ReflectionDemo.TypeInspection;
-using ReflectionDemo.Attributes;
-using ReflectionDemo.DynamicObjectCreation;
-using ReflectionDemo.MethodInvocation;
-using ReflectionDemo.AssemblyScanning;
+using Reflection.TypeInspection;
+using Reflection.Attributes;
+using Reflection.DynamicObjectCreation;
+using Reflection.MethodInvocation;
+using Reflection.AssemblyScanning;
 
 Console.WriteLine("##########################################");
 Console.WriteLine("#        C# Reflection Playground        #");

@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace ReflectionDemo.TypeInspection;
+namespace Reflection.TypeInspection;
 
 public static class TypeInspector
 {

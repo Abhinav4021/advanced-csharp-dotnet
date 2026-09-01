@@ -1,3 +1,5 @@
+namespace Reflection.Attributes;
+
 [Endpoint("/api/users")]
 public class UserEndpoints
 {

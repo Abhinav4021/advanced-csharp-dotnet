@@ -1,0 +1,15 @@
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/Reflection.GeneratedMSBuildEditorConfig.editorconfig
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/Reflection.AssemblyInfoInputs.cache
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/Reflection.AssemblyInfo.cs
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/Reflection.csproj.CoreCompileInputs.cache
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/Reflection.sourcelink.json
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/bin/Debug/net10.0/Reflection
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/bin/Debug/net10.0/Reflection.deps.json
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/bin/Debug/net10.0/Reflection.runtimeconfig.json
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/bin/Debug/net10.0/Reflection.dll
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/bin/Debug/net10.0/Reflection.pdb
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/Reflection.dll
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/refint/Reflection.dll
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/Reflection.pdb
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/Reflection.genruntimeconfig.cache
+/Users/abhinavkumar/advanced-csharp-dotnet/Reflection/obj/Debug/net10.0/ref/Reflection.dll
